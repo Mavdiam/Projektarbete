@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio sida</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body { padding-top: 70px; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top border-bottom">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">CREATIVE.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Arbeten</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Om mig</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    -
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <button class="btn btn-dark filter-btn me-2" data-filter="all">Alla</button>
+                    <button class="btn btn-outline-dark filter-btn me-2" data-filter="photo">Foto</button>
+                    <button class="btn btn-outline-dark filter-btn" data-filter="design">Design</button>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="gallery-grid">
+                
+                <div class="col gallery-item" data-category="photo">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://unsplash.com" class="card-img-top rounded" alt="Fotoprojekt">
+                        <div class="card-body px-0 pt-3">
+                            <h5 class="card-title h6 fw-bold mb-1">Gatufotografering</h5>
+                            <p class="card-text small text-muted">Fotografi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col gallery-item" data-category="design">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://unsplash.com" class="card-img-top rounded" alt="Designprojekt">
+                        <div class="card-body px-0 pt-3">
+                            <h5 class="card-title h6 fw-bold mb-1">Varumärkesidentitet</h5>
+                            <p class="card-text small text-muted">Grafisk Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col gallery-item" data-category="photo">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://unsplash.com" class="card-img-top rounded" alt="Fotoprojekt 2">
+                        <div class="card-body px-0 pt-3">
+                            <h5 class="card-title h6 fw-bold mb-1">Porträtt i studio</h5>
+                            <p class="card-text small text-muted">Fotografi</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                
+                <div class="col-md-5 mb-4 mb-md-0 text-center">
+                    <img src="https://unsplash.com" class="img-fluid rounded-circle shadow" alt="Profilbild" style="max-width: 280px;">
+                </div>
+
+                <div class="col-md-7">
+                    <h2 class="fw-bold mb-3">Om mig</h2>
+                    <p class="lead text-secondary">Hej! Jag är en kreativ skapare baserad i Sverige.</p>
+                    <p>Jag älskar att kombinera visuell estetik med funktionell design. Med öga för detaljer och fokus på minimalism hjälper jag varumärken och privatpersoner att förverkliga sina idéer genom fotografi och digital design.</p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <h6 class="fw-bold mb-1">Tjänster</h6>
+                            <ul class="list-unstyled text-muted small">
+                                <li>• Porträtt & Gatufoto</li>
+                                <li>• Grafisk Identitet</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <h6 class="fw-bold mb-1">Verktyg</h6>
+                            <ul class="list-unstyled text-muted small">
+                                <li>• Adobe Photoshop</li>
+                                <li>• Figma & Bootstrap</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <h2 class="fw-bold">Kontakta mig</h2>
+                    <p class="text-muted">Hör gärna av dig om du vill samarbeta eller bara säga hej!</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <form action="https://formspree.io" method="POST">
+                        
+                        <div class="mb-3">
+                            <label for="name" class="form-label small fw-bold">Namn</label>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Ditt fullständiga namn" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label small fw-bold">E-postadress</label>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="namn@exempel.se" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="message" class="form-label small fw-bold">Meddelande</label>
+                            <textarea name="message" id="message" class="form-control" rows="5" placeholder="Vad kan jag hjälpa dig med?" required></textarea>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-dark btn-lg fs-6">Skicka meddelande</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            
+            const filterButtons = document.querySelectorAll(".filter-btn");
+            const galleryItems = document.querySelectorAll(".gallery-item");
+
+            filterButtons.forEach(button => {
+                button.addEventListener("click", function() {
+                    
+                    const filterValue = this.getAttribute("data-filter");
+
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove("btn-dark");
+                        btn.classList.add("btn-outline-dark");
+                    });
+                    this.classList.remove("btn-outline-dark");
+                    this.classList.add("btn-dark");
+
+                    galleryItems.forEach(item => {
+                        const itemCategory = item.getAttribute("data-category");
+
+                        if (filterValue === "all" || filterValue === itemCategory) {
+                            item.classList.remove("d-none");
+                        } else {
+                            item.classList.add("d-none");
+                        }
+                    });
+
+                });
+            });
+
+        });
+    </script>
+
+
+</body>
+</html>
